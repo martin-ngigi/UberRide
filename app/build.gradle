@@ -15,6 +15,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //to enable multidex
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -35,6 +38,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -48,5 +52,17 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
     //google sign in
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+
+    //material
+    implementation 'com.google.android.material:material:1.5.0'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    //to enable multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
 
 }
